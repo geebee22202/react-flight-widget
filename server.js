@@ -6,6 +6,8 @@ const { response } = require("express");
 require("dotenv").config();
 
 const app = express();
+app.use(cors())
+
 app.get("/flights", (req, res) => {
   const options = {
     url: `${process.env.URL}?page-size=6`,
