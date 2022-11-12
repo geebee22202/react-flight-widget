@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Table from "./Table";
 const TableLetter = ({ letter, index }) => {
   const [flip, setFlip] = useState(false);
 
